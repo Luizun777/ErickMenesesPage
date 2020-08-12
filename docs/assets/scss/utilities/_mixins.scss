@@ -1,0 +1,60 @@
+
+@mixin mobile-xs {
+  @media (min-width: #{$mobile-xs}) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (min-width: #{$mobile-m}) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (min-width: #{$mobile-l}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin laptop-m {
+  @media (min-width: #{$laptop-m}) {
+    @content;
+  }
+}
+
+@mixin laptop-l {
+  @media (min-width: #{$laptop-l}) {
+    @content;
+  }
+}
+
+@mixin xl-desktop {
+  @media (min-width: #{$xl-desktop}) {
+    @content;
+  }
+}

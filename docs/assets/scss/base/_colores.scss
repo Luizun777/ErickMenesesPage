@@ -1,0 +1,103 @@
+// Declaración de colores
+
+// Iconos
+$icono-naranja: #fc871f;
+$icono-gris: #8f8f8f;
+$icono-azul: #0a3d8e;
+$icono-blanco: #ffffff;
+$icono-estrella: #f4f142;
+$icono-fondo-azul: #103e9e;
+$icono-verde: #76c903;
+$icono-pulgar-abajo: #ba2b2b;
+
+// Botones
+$boton-azul: #0a3d8e;
+$boton-gris: #eeeeee;
+$boton-blanco: #ffffff;
+$boton-verde-degradado-hover: #9ef426;
+$boton-naranja-degradado-hover: #ffa500;
+$boton-gris-bloqueado-degradado-hover: #c1c1c1;
+$boton-add-usuario: #f8f8f8;
+$boton-add-usuario-hover: rgba(0, 0, 0, 0.05);
+$boton-verde-degradado: linear-gradient(#a1f32f, #72c206);
+$boton-naranja-degradado: linear-gradient(#fcab1f, #fc871f);
+$boton-gris-bloqueado-degradado: linear-gradient(to bottom, #c1c1c1, #8d8d8d);
+$boton-gris-degradado: linear-gradient(to bottom, lightgray, gray);
+$boton-gris-degradado-active: #73c206;
+$boton-azul-obscuro: #103269;
+$boton-verde: #269e38;
+$boton-naranja: #fc871f;
+
+// Textos
+$texto-gris: #8f8f8f;
+$texto-gris2: #b5b5b5;
+$texto-azul: #0a3d8e;
+$texto-blanco: #ffffff;
+$texto-negro: #000000;
+$texto-gris-fuerte: #575756;
+$texto-gris-medio: #9c9b9b;
+$texto-azul-obscuro: #103269;
+$texto-verde: #269e38;
+$texto-rojo: #dd1212;
+$texto-naranja: #fc871f;
+$texto-gris-oscuro: #292929;
+
+// Fondos
+$fondo-principal: #ededed;
+$fondo-azul: #0a3d8e;
+$fondo-azul-crema-light: #d7e0ed;
+$fondo-azul-crema-dark: #c0cde2;
+$fondo-blanco: #ffffff;
+$fondo-naranja-obscuro: #be6517;
+$fondo-gris: #eeeeee;
+$fondo-gris-obscuro: #d3d3d3;
+$fondo-negro-tooltip: rgba(0, 0, 0, 1);
+$fondo-botones-flotantes: rgba(255, 255, 255, 0.79);
+$fondo-gris-fuerte: #575756;
+$fondo-gris-medio: #9c9b9b;
+$fondo-gris: #c6c6c5;
+$fondo-gris-claro: #eaeaea;
+$fondo-azul-obscuro: #103269;
+$fondo-verde: #269e38;
+$fondo-naranja: #fc871f;
+$fondo-naranja-claro: #ffb06034;
+$fondo-claro: #f5f5f5;
+$fondo-rojo: #dd1212;
+$naranja-cotizacion: #fff7ef;
+$verde-cotizacion: #eff8f1;
+$grid-desactivado: #e9ecef;
+
+// Bordes
+$borde-gris: #eeeeee;
+$borde-gris-obscuro: #9a9a9a;
+$borde-blanco: #ffffff;
+$borde-transparente: #ffffff00;
+$borde-azul: #0a3d8e;
+$border-buscador-cabecera-gris: #cccccc;
+$border-buscador-cabecera-naranja: $texto-naranja;
+$borde-tooltip: rgba(0, 0, 0, 1) transparent transparent transparent;
+$borde-gris-fuerte: #575756;
+$borde-gris-claro: #eaeaea;
+$borde-azul-obscuro: #103269;
+$borde-verde: #269e38;
+$borde-naranja: #fc871f;
+$borde-rojo: #dd1212;
+
+// Circulos
+$circulo-fondo-gris: #d7d7d7;
+$circulo-color-gris: #808080;
+
+// Sombras
+$sombra-texto: 0px 3px 6px #000000b2;
+$sombra-caja: 2px 2px 10px rgba(0, 0, 0, 0.3);
+$sombra-logo-caja: 7px 7px 8px rgba(0, 0, 0, 0.3);
+$sombra-texto-info-empresa: 2px 2px 4px rgba(0, 0, 0, 0.3);
+$sombra-boton-naranja: 0px 2px 5px rgba(0, 0, 0, 0.3);
+$sombra-boton-busines-card: 2px 2px 7px rgba(0, 0, 0, 0.2);
+$sombra-certificate-plans-price: 2px 5px 20px rgba(0, 0, 0, 0.7);
+$sombra-botones-flotantes: -1px 0px 15px rgba(0, 0, 0, 0.3);
+
+
+// Burbuja Chat
+$chat-azul: rgba(10, 61, 142, 0.8);
+$chat-naranja: rgba(252, 135, 31, 0.8);
