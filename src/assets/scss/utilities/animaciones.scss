@@ -1,0 +1,148 @@
+$defaultDuration: 0.3s;
+@mixin hideTapHighlightColor() {
+	//Prevent highlight colour when element is tapped
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+	//Improve performance on mobile/tablet devices
+	transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+	//Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/* Campana */
+.bell {
+  transform-origin: top center;
+  animation: bell-shake 40s ease infinite;
+}
+
+@keyframes bell-shake {
+  1% {
+    transform: rotateZ(15deg);
+  }
+  2% {
+    transform: rotateZ(-15deg);
+  }
+  3% {
+    transform: rotateZ(20deg);
+  }
+  4% {
+    transform: rotateZ(-20deg);
+  }
+  5% {
+    transform: rotateZ(0);
+  }
+}
+
+/* Wobble Vertical */
+@keyframes wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.wobble-horizontal {
+  display: inline-block;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  animation-name: wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/* Pop */
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop {
+  display: inline-block;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  animation-name: pop;
+  animation-duration: $defaultDuration;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes palpitar {
+  0%   {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+.palpitar {
+  animation: palpitar 2s infinite;
+}
+
+// Movimiento Carrito
+#axis .move-ne {
+  position: absolute;
+  transform: translate(0,-5rem);
+  -webkit-transform: translate(0,-5rem);
+  -o-transform: translate(0,-5rem); 
+  -moz-transform: translate(0,-5rem);
+  animation: pop-out 2s ease-in-out infinite
+}
+
+.object {
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 0.9s ease-in-out; /** Firefox **/
+  -o-transition: all 0.9s ease-in-out; /** Opera **/
+}
+
+@keyframes pop-out {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}

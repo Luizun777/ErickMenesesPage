@@ -1,0 +1,21 @@
+<div class="contendio-nav">
+  <nav class="fondo-nav-titulo">
+    <a class="titulo" href="#">Erick Meneses</a>
+  </nav>
+  <div class="contenedor-navegador">
+    <nav class="fondo-nav">
+      <a [routerLink]="['/Inicio']" routerLinkActive="active" class="pestanas">INICIO</a>
+      <a [routerLink]="['/Informacion']" routerLinkActive="active" class="pestanas">INFORMACIÓN</a>
+      <a [routerLink]="['/Servicios']" routerLinkActive="active" class="pestanas">SERVICIOS</a>
+      <a [routerLink]="['/Contacto']" routerLinkActive="active" class="pestanas">CONTACTO</a>
+      <ng-container *ngIf="cuentaMovil">
+        <a [routerLink]="['/Carrito']" routerLinkActive="active" class="pestanas"><img src="assets/img/icon/shopping-cart-solid.svg" alt="Carrito"></a>
+      </ng-container>
+    </nav>
+    <ng-container *ngIf="!cuentaMovil">
+      <div class="carrito">
+        <a [routerLink]="['/Carrito']" routerLinkActive="active" class="pestanas"><img src="assets/img/icon/shopping-cart-solid.svg" alt="Carrito"></a>
+      </div>
+    </ng-container>
+  </div>
+</div>
