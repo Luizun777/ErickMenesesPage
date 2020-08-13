@@ -11,6 +11,6 @@ export class AppComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    localStorage.setItem('carrito', JSON.stringify([]));
+    JSON.parse(localStorage.getItem('carrito')) ? null : localStorage.setItem('carrito', JSON.stringify([]));
   }
 }

@@ -138,6 +138,82 @@
           font-size: 20px;
         }
       }
+      .titulo-precio {
+        font-size: 25px;
+        &.total {
+          font-weight: bold !important;
+        }
+      }
+      .precio {
+        font-size: 25px;
+        font-weight: bold;
+        grid-column-end: none;
+      }
+    }
+  }
+  .info-productos {
+    text-align: center;
+    padding: 1rem 0rem;
+    border-bottom: 3px solid #EEC442;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 12px;
+    @include tablet {
+      max-width: 60%;
+      font-size: 12px;
+    }
+    @include desktop {
+      max-width: 70%;
+      font-size: 12px;
+    }
+    @include laptop {
+      max-width: 50%;
+      font-size: 12px;
+    }
+    @include laptop-m {
+      max-width: 53%;
+      font-size: 13px;
+    }
+    @include laptop-l {
+      max-width: 53%;
+      font-size: 13px;
+    }
+    @include xl-desktop {
+      max-width: 53%;
+      font-size: 13px;
+    }
+  }
+  .contactos {
+    margin-top: 5rem;
+    .titulo {
+      text-align: center;
+    }
+    .sub-titulo {
+      margin: 0 auto;
+      text-align: center;
+      font-weight: normal !important;
+      max-width: 53%;
+    }
+    form {
+      display: grid;
+      margin: 0 auto;
+      max-width: 53%;
+      grid-gap: 1rem;
+      .form-control {
+        height: calc(3.25rem + 2px);
+      }
+    }
+    .boton-contacto {
+      margin-top: 1rem;
+      text-align: center;
+      button {
+        cursor: pointer;
+        padding: 1rem 2rem;
+        color: #ffffff;
+        background: #EEC442 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: none !important;
+      }
     }
   }
 }

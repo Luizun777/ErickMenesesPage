@@ -16,11 +16,32 @@
               </button>
             </div>
             <div class="sub-titulo">{{item.desc}}</div>
-            <div class="precio">{{item.precio | currency}}</div>
+            <div class="precio">{{item.precio | currency}} MXN</div>
           </div>
-          <div class="impuesto">IVA e Impuestos: <strong>{{(item.precio*0.16) | currency}}</strong></div>
+          <div class="impuesto">IVA e Impuestos: <strong>{{(item.precio*0.16) | currency}} MXN</strong></div>
         </div>
       </div>
+      <div class="producto">
+        <div class="titulo-precio">TOTAL SERVICIOS:</div>
+        <div class="precio">${{totalServicio | number}} MXN</div>
+        <div class="titulo-precio">TOTAL IVA + IMPUESTOS:</div>
+        <div class="precio">${{totalServicioMasIva | number}} MXN</div>
+        <div class="titulo-precio total">TOTAL:</div>
+        <div class="precio">${{total | number}} MXN</div>
+      </div>
     </div>
+    <p class="info-productos">Te informamos que este precio es un estimado y una cotización rápida para saber aproximadamente el costo de los servicios que requieres, una ves teniendo una llamada telefónica te daremos mas detalles acerca de la cotización exacta para el costo de tus servicios requeridos.</p>
   </ng-template>
+  <div class="contactos">
+    <h3 class="titulo">DATOS DE CONTACTO</h3>
+    <h3 class="sub-titulo">Ingresa los datos para contactarme contigo y darte más información sobre tu cotización.</h3>
+    <form [formGroup]="formulario">
+      <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre" autocomplete="off">
+      <input type="email" class="form-control" placeholder="Correo" formControlName="correo" autocomplete="off">
+      <input type="tel" class="form-control" placeholder="Telefono" formControlName="telefono" autocomplete="off">
+    </form>
+    <div class="boton-contacto">
+      <button (click)="contactame()">CONTACTAME</button>
+    </div>
+  </div>
 </div>
