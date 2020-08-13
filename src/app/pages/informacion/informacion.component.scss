@@ -94,6 +94,9 @@
     }
   }
   .info-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
     .info {
       display: grid;
       grid-template-columns: auto 1fr;
