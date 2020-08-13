@@ -1,0 +1,107 @@
+@import '../../../styles.scss';
+
+.portada-video {
+  padding: 3rem 0rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  display: grid;
+  background-image: url(../../../assets/img/prodcutos/fondo.png);
+  background-repeat: no-repeat;
+  height: auto;
+  background-position: top;
+  background-position-x: 52%;
+  @include desktop {
+    height: auto;
+    min-height: 25vh;
+    background-position: top;
+    background-position-x: 76%;
+  }
+  @include laptop {
+    height: auto;
+    min-height: 25vh;
+    background-position: top;
+    background-position-x: right;
+  }
+  @include laptop-m {
+    height: auto;
+    min-height: 25vh;
+    background-position: top;
+    background-position-x: right;
+  }
+  @include laptop-l {
+    height: auto;
+    min-height: 25vh;
+    background-position: top;
+    background-position-x: 76%;
+    background-size: 100% 100%;
+  }
+  @include xl-desktop {
+    height: auto;
+    min-height: 25vh;
+    background-position: top;
+    background-size: 90% 100%;
+  }
+  .titulo {
+    align-self: center;
+    font: Bold 18px Montserrat;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    @include mobile {
+      font: Bold 40px Montserrat;
+    }
+    @include tablet {
+      font: Bold 40px Montserrat;
+    }
+    @include desktop {
+      font: Bold 40px Montserrat;
+    }
+    @include laptop {
+      font: Bold 40px Montserrat;
+    }
+    @include laptop-m {
+      font: Bold 80px Montserrat;
+    }
+    @include laptop-l {
+      font: Bold 80px Montserrat;
+    }
+    @include xl-desktop {
+      font: Bold 80px Montserrat;
+    }
+  }
+}
+.contenido-empresa {
+  padding: 2rem;
+  text-align: center;
+  @include mobile {
+    padding: 2rem 4rem;
+  }
+  @include tablet {
+    padding: 2rem 8rem;
+  }
+  @include desktop {
+    padding: 2rem 8rem;
+  }
+  @include laptop {
+    padding: 2rem 8rem;
+  }
+  @include laptop-m {
+    padding: 2rem 16rem;
+  }
+  @include laptop-l {
+    padding: 2rem 16rem;
+  }
+  @include xl-desktop {
+    padding: 2rem 16rem;
+  }
+  .titulo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .info {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+}

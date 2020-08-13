@@ -1,0 +1,93 @@
+@import '../../../styles.scss';
+
+.portada-video {
+  padding: 3rem 0rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  display: grid;
+  background-image: url(../../../assets/img/prodcutos/ropa.png);
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 90vh;
+  background-position: top;
+  background-position-x: 52%;
+  @include desktop {
+    height: auto;
+    min-height: 90vh;
+    background-position: top;
+    background-position-x: 76%;
+  }
+  @include laptop {
+    height: auto;
+    min-height: 90vh;
+    background-position: top;
+    background-position-x: right;
+  }
+  @include laptop-m {
+    height: auto;
+    min-height: 90vh;
+    background-position: top;
+    background-position-x: right;
+  }
+  @include laptop-l {
+    height: auto;
+    min-height: 90vh;
+    background-position: top;
+    background-position-x: 76%;
+    background-size: 100% 100%;
+  }
+  @include xl-desktop {
+    height: auto;
+    min-height: 90vh;
+    background-position: top;
+    background-size: 90% 100%;
+  }
+  .titulo {
+    align-self: center;
+    font: Bold 18px Montserrat;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    background: hsla(213, 98%, 16%, 0.69) 0% 0% no-repeat padding-box;
+    width: 15rem;
+    padding: 1rem 2rem;
+    place-self: center;
+    @include mobile {
+      width: 18rem;
+      padding: 2rem;
+      font: Bold 20px Montserrat;
+    }
+    @include tablet {
+      width: 25rem;
+      padding: 4rem;
+      font: Bold 20px Montserrat;
+    }
+    @include desktop {
+      width: 25rem;
+      padding: 4rem;
+      font: Bold 20px Montserrat;
+    }
+    @include laptop {
+      width: 25rem;
+      padding: 2rem;
+      font: Bold 20px Montserrat;
+    }
+    @include laptop-m {
+      width: 25rem;
+      padding: 4rem;
+      font: Bold 30px Montserrat;
+    }
+    @include laptop-l {
+      width: 35rem;
+      padding: 4rem;
+      font: Bold 40px Montserrat;
+    }
+    @include xl-desktop {
+      width: 35rem;
+      padding: 4rem;
+      font: Bold 40px Montserrat;
+    }
+  }
+}

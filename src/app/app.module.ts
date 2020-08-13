@@ -12,6 +12,12 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InicioRopaComponent } from './page-ropa/inicio-ropa/inicio-ropa.component';
+import { InfoRopaComponent } from './page-ropa/info-ropa/info-ropa.component';
+import { ProductoRopaComponent } from './page-ropa/producto-ropa/producto-ropa.component';
+import { SucursalRopaComponent } from './page-ropa/sucursal-ropa/sucursal-ropa.component';
+import { CarritoRopaComponent } from './page-ropa/carrito-ropa/carrito-ropa.component';
+import { HeaderRopaComponent } from './shared/header-ropa/header-ropa.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     InformacionComponent,
     ServiciosComponent,
     ContactoComponent,
-    CarritoComponent
+    CarritoComponent,
+    InicioRopaComponent,
+    InfoRopaComponent,
+    ProductoRopaComponent,
+    SucursalRopaComponent,
+    CarritoRopaComponent,
+    HeaderRopaComponent
   ],
   imports: [
     BrowserModule,

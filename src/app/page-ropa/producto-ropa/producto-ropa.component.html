@@ -1,0 +1,18 @@
+<div class="contenido-servicios">
+  <div class="lista-servicios">
+    <div class="servicio" *ngFor="let item of serviciosList">
+      <div class="img-servicio">
+        <div class='svr-bs' [style]="'background:url('+item.img+');'" (click)="agregar(item)">
+          <div class='hover'><div class='svr-frs'></div>
+      </div>
+      </div>
+      <div class="titulo-servicio">
+        {{item.nombre}}
+      </div>
+      <div class="linea-divi"></div>
+      <div class="desc-servicio">
+        {{item.precio | currency}}
+      </div>
+    </div>
+  </div>
+</div>

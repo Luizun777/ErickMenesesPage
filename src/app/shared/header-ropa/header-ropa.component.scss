@@ -1,0 +1,182 @@
+@import '../../../styles.scss';
+
+.contendio-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #18469D 0% 0% no-repeat padding-box;
+  @include mobile {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include tablet {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include desktop {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include laptop {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include laptop-m {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include laptop-l {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include xl-desktop {
+    grid-template-columns: 2fr 1fr;
+  }
+  .fondo-nav-titulo {
+    justify-content: center !important;
+    padding: 3rem 0rem;
+    background: #18469D 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    @include mobile {
+      padding: 2rem 0rem;
+    }
+    @include tablet {
+      padding: 2rem 0rem;
+    }
+    @include desktop {
+      padding: 2rem 0rem;
+    }
+    @include laptop {
+      padding: 2rem 0rem;
+    }
+    @include laptop-m {
+      padding: 2rem 0rem;
+    }
+    @include laptop-l {
+      padding: 2rem 0rem;
+    }
+    @include xl-desktop {
+      padding: 2rem 0rem;
+    }
+    .titulo {
+      font: Bold 16px Montserrat;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      @include mobile {
+        padding-right: 2rem;
+      }
+      @include tablet {
+        padding-right: 2rem;
+      }
+      @include desktop {
+        padding-right: 2rem;
+      }
+      @include laptop {
+        padding-right: 2rem;
+      }
+      @include laptop-m {
+        padding-right: 2rem;
+        font: Bold 30px Montserrat;
+      }
+      @include laptop-l {
+        padding-right: 2rem;
+        font: Bold 30px Montserrat;
+      }
+      @include xl-desktop {
+        padding-right: 2rem;
+        font: Bold 30px Montserrat;
+      }
+    }
+  }
+  .contenedor-navegador {
+    align-self: center;
+    .fondo-nav {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      background: #18469D 0% 0% no-repeat padding-box;
+      align-content: center;
+      justify-content: center;
+      grid-gap: 1rem;
+      font-size: 12px;
+      @include mobile {
+        grid-template-columns: repeat(3, auto);
+      }
+      @include tablet {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(3, auto);
+        font-size: 12px;
+      }
+      @include desktop {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 17%);
+      }
+      @include laptop {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 15%);
+        font-size: 16px;
+      }
+      @include laptop-m {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 15%);
+        font-size: 16px;
+      }
+      @include laptop-l {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 15%);
+        font-size: 16px;
+      }
+      @include xl-desktop {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 15%);
+        font-size: 16px;
+      }
+      .pestanas {
+        color: #FFFFFF;
+        align-self: center;
+        text-align: center;
+        font-weight: bold;
+        background: #18469D;
+        padding: 0.2rem 1.5rem;
+        // border-bottom: 4px solid #5A5A5A;
+        &:hover {
+          text-decoration:none;
+          background: #000000;
+          // border-bottom: 4px solid #F5EA03;
+        }
+        &.active {
+          text-decoration:none;
+          background: #000000;
+          // border-bottom: 4px solid #F5EA03;
+        }
+        &:last-of-type {
+          margin-right: 0rem;
+          @include mobile {
+            margin-right: 1rem;
+          }
+          @include tablet {
+            margin-right: 1rem;
+          }
+          @include desktop {
+            margin-right: 1rem;
+          }
+          @include laptop {
+            margin-right: 1rem;
+          }
+          @include laptop-m {
+            margin-right: 1rem;
+          }
+          @include laptop-l {
+            margin-right: 1rem;
+          }
+          @include xl-desktop {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+    .carrito {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  }
+}
+img {
+  margin-bottom: 4px;
+}

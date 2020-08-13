@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+.contenedor-sucursales {
+  padding: 4rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .sucursal {
+    justify-self: center;
+    img {
+      width: 349px;
+      height: 349px;
+    }
+    .titulo {
+      text-align: center;
+      color: #012652;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .sub-titulo {
+      font-size: 20px;
+      text-align: center;
+      color: #012652;
+    }
+  }
+}
