@@ -27,11 +27,14 @@ export class CarritoRopaComponent implements OnInit {
   carrito() {
     this.productosLista = JSON.parse(localStorage.getItem('carrito'));
     this.productosCarrito = this.productosLista.length;
-    this.sumasTotales();
+    this.sumasTotales(this.productosLista);
   }
 
-  sumasTotales() {
-    this.productosLista.forEach((prod: any) => {
+  sumasTotales(prod: any) {
+    this.totalServicio = 0;
+    this.totalServicioMasIva = 0;
+    this.total = 0;
+    prod.forEach((prod: any) => {
       this.totalServicio += prod.precio;
       this.totalServicioMasIva += (prod.precio*0.16);
       this.total = this.totalServicio + this.totalServicioMasIva;
@@ -42,7 +45,7 @@ export class CarritoRopaComponent implements OnInit {
     this.productosLista.splice(index, 1);
     this.productosCarrito = this.productosLista.length;
     localStorage.setItem('carrito', JSON.stringify(this.productosLista));
-    this.sumasTotales();
+    this.carrito();
   }
 
   setFormulario() {
